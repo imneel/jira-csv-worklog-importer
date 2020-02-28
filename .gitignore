@@ -1,0 +1,6 @@
+/.vscode
+/.bundle
+/.env-*
+/.env
+.byebug_history
+*.csv

@@ -1,0 +1,24 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    byebug (11.1.1)
+    csv (3.1.2)
+    dotenv (2.7.5)
+    excon (0.72.0)
+    json (2.3.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  byebug (~> 11.1.1)
+  csv (~> 3.1.2)
+  dotenv (~> 2.7.5)
+  excon (~> 0.72.0)
+  json (~> 2.3.0)
+
+RUBY VERSION
+   ruby 2.4.2p198
+
+BUNDLED WITH
+   1.16.0
