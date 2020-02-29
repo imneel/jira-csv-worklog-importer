@@ -8,3 +8,6 @@ If you are linux replace brew with your package manager.
 2. Run `bundle install --path=.bundle --binstubs .bundle/bin --jobs=4 --retry=3`
 3. Add credentials to `.env-sampl` and create symlink using `ln -s .env-sample .env`
 4. Run `bundle exec ruby worklog.rb`
+
+### Important: Please use following format for Toggl description
+`<JIRA_TASK_ID>: Description`
