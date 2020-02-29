@@ -4,3 +4,4 @@
 /.env
 .byebug_history
 *.csv
+tmp
