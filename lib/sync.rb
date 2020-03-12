@@ -8,7 +8,7 @@ class Sync
   end
 
   def execute
-    fetch_records && push_worklogs && mark_synced
+    fetch_records && push_worklogs && mark_synced && delete_clockwork_records
   end
 
   private
@@ -34,6 +34,10 @@ class Sync
     end
 
     success_ids << id
+  end
+
+  def delete_clockwork_records
+    jira.delete_clockwork_worklogs(Time.parse(from_date))
   end
 
   def extract_vals(entry)

@@ -1,6 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    awesome_print (1.8.0)
+    byebug (11.1.1)
     dotenv (2.7.5)
     excon (0.72.0)
     json (2.3.0)
@@ -9,6 +11,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print
+  byebug
   dotenv (~> 2.7.5)
   excon (~> 0.72.0)
   json (~> 2.3.0)
