@@ -37,7 +37,7 @@ class Sync
   end
 
   def delete_clockwork_records
-    jira.delete_clockwork_worklogs(Time.parse(from_date))
+    jira_api.delete_clockwork_worklogs(Time.parse(from_date))
   end
 
   def extract_vals(entry)
@@ -50,6 +50,7 @@ class Sync
 
   def mark_synced
     success_ids.each_slice(25) { |ids| toggl_api.attach_tag('JIRA', ids) }
+    true
   end
 
   def fetch_records

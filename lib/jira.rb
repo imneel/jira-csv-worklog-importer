@@ -61,6 +61,7 @@ class Jira
   def delete_clockwork_worklogs(started_at)
     worklogs = fetch_recent_worklogs(started_at)
     return true if worklogs.nil? || worklogs.empty?
+
     worklogs.each do |worklog|
       next unless clockwork_worklog?(worklog)
       if delete_worklog(worklog["issueId"], worklog["id"])
